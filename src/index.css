@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Um pouco mais largo para o efeito ser mais visível */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #831843;
+  border-radius: 20px; /* Aumentei para 20px para ser mais visível */
+  border: 3px solid transparent; /* Adiciona uma borda transparente */
+  background-clip: padding-box; /* Faz o background respeitar a borda */
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+  border-radius: 20px; /* Mesmo valor do thumb */
+}
+
+section h3 {
+  color: transparent;
+  -webkit-text-stroke: 0.7px #6b7280;
+  /* #831843 */
+  animation: textReveal 4s linear forwards;
+}
+
+@layer base {
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
