@@ -1,6 +1,3 @@
-import fundo from "./assets/profile.png";
-import { TbArrowBadgeRight } from "react-icons/tb";
-import { HiOutlineAcademicCap } from "react-icons/hi";
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
@@ -69,28 +66,6 @@ export function AboutMe() {
     );
 
     gsap.fromTo(
-      ".scrub-img",
-      {
-        opacity: 0,
-        x: -300, // Fora da tela à esquerda
-        rotation: -45, // Inclinado a 45 graus
-      },
-      {
-        opacity: 1,
-        x: 0,
-        rotation: 0, // Endireita o texto
-        duration: 1.8,
-        scrollTrigger: {
-          trigger: ".section-img",
-          // scrub: true, // Sincroniza com o scroll
-          start: "top 80%",
-          end: "top 30%",
-          // markers: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
       ".about-title",
       {
         opacity: 0,
@@ -115,164 +90,60 @@ export function AboutMe() {
   });
 
   return (
-    <div
-      className="section-title section-scrub p-10 max-xl:w-full mx-auto flex flex-col items-center justify-center min-h-screen text-white pr-[9%]"
-      id="sobre"
-    >
-      <h2 className="about-title text-5xl text-gray-600 font-thin mb-5">
-        Sobre <span className="text-rose-500">mim</span>
-      </h2>
+    <section id="sobre" className=" w-full py-16 px-4 text-white">
+      <div className="max-w-5xl mx-auto flex flex-col gap-8">
+        <h2 className=" text-gray-500 font-thin text-5xl text-center max-lg:mt-10">
+          Sobre <span className="text-rose-500">Mim</span>
+        </h2>
 
-      <section className="section-img flex flex-col lg:flex-row items-center justify-center mt-10 ">
-        {/* Imagem */}
-        <div className="scrub-img xl:w-1/2 w-full xl:mr-5 xl:flex hidden items-center">
-          <img
-            className="w-full h-auto object-cover"
-            src={fundo}
-            alt="Ricardo"
-          />
+        <p className="text-lg leading-relaxed text-gray-300">
+          Sou{" "}
+          <span className="text-white font-semibold">
+            Desenvolvedor Full Stack
+          </span>
+          , com formação em Análise e Desenvolvimento de Sistemas, com
+          experiência prática em projetos próprios utilizando tecnologias como{" "}
+          <span className="text-cyan-400">React</span>,{" "}
+          <span className="text-cyan-400">Node.js</span>,{" "}
+          <span className="text-cyan-400">Fastify</span>,{" "}
+          <span className="text-cyan-400">Prisma</span>,{" "}
+          <span className="text-cyan-400">MongoDB </span> e{" "}
+          <span className="text-cyan-400">TailwindCSS</span>.
+        </p>
+        <p className="text-lg leading-relaxed text-gray-300">
+          e experiência prática no desenvolvimento de projetos próprios, como
+          este portfólio e outras aplicações web completas.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          Busco oportunidades para colaborar com times de tecnologia, contribuir
+          com soluções e continuar aprendendo e crescendo como desenvolvedor.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          Tenho familiaridade com metodologias ágeis como{" "}
+          <span className="text-white font-medium">Scrum</span> e{" "}
+          <span className="text-white font-medium">Kanban</span>, e foco em
+          desenvolver soluções com código limpo, performance e boa usabilidade.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          Acredito no{" "}
+          <span className="text-white font-medium">aprendizado contínuo</span> e
+          estou sempre evoluindo tecnicamente para entregar soluções de valor.
+        </p>
+
+        <div className="text-center mt-6">
+          <a
+            href="https://github.com/RicardoMadureiira"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-rose-500 hover:bg-rose-600 transition-colors text-white px-6 py-3 rounded-full font-medium"
+          >
+            Ver meus projetos no GitHub
+          </a>
         </div>
-
-        {/* Habilidades */}
-        <div className="w-[60%] h-auto flex justify-center overflow-hidden">
-          <div className=" grid grid-cols-1 sm:grid-cols-1 sm:gap-10 lg:grid-cols-2 xl:grid-cols-2 gap-5 xl:gap-10 max-w-6xl">
-            {/* Quem sou eu */}
-            <div
-              id="ability-1"
-              className="about-ability group flex items-center gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300"
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0" />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Quem Sou Eu
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Um desenvolvedor apaixonado por transformar ideias em soluções
-                  digitais
-                </p>
-              </div>
-            </div>
-
-            {/* Do Frontend ao Backend */}
-            <div
-              id="ability-2"
-              className="about-ability group flex items-center gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg border-l-2 border-rose-500 p-5 shadow-md "
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0" />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Do Frontend ao Backend
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Criando soluções completas com{" "}
-                  <span className="text-cyan-500">React</span>,{" "}
-                  <span className="text-cyan-500">TailwindCSS</span> e{" "}
-                  <span className="text-green-400">Node.js</span>.
-                </p>
-              </div>
-            </div>
-
-            {/* Minha missão */}
-            <div
-              id="ability-3"
-              className="about-ability group flex items-center gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 p-5 "
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0" />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Minha Missão
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Criar aplicações modernas que conectem pessoas e facilitem
-                  suas vidas.
-                </p>
-              </div>
-            </div>
-
-            {/* Formação */}
-            <div
-              id="ability-4"
-              className="about-ability group flex items-start gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg p-5 border-l-2 border-rose-500 shadow-md "
-            >
-              <HiOutlineAcademicCap className="text-rose-500 text-3xl shrink-0 " />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Formação
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Análise e Desenvolvimento de Sistemas.
-                </p>
-              </div>
-            </div>
-
-            {/* Scrum/Kanban */}
-            <div
-              id="ability-5"
-              className="about-ability group flex items-center gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg p-5 "
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0 " />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Scrum/Kanban
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Experiência em metodologias ágeis para gerenciamento de
-                  projetos.
-                </p>
-              </div>
-            </div>
-
-            {/* Aprendizado Contínuo */}
-            <div
-              id="ability-6"
-              className="about-ability group flex items-center gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg p-5 border-l-2 border-rose-500"
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0 " />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Aprendizado Contínuo
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Capacidade de aprender novas tecnologias e adaptar-se a novos
-                  desafios rapidamente.
-                </p>
-              </div>
-            </div>
-            {/* Comunicação */}
-            <div
-              id="ability-7"
-              className="about-ability group animate-ability max-2xl:hidden flex items-start gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg p-5 border-rose-500 shadow-md shadow-rose-950"
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0 max-md:hidden" />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Comunicação
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Habilidade para comunicar ideias técnicas e trabalhar bem em
-                  equipe.
-                </p>
-              </div>
-            </div>
-            {/* Meu diferencial */}
-            <div
-              id="ability-8"
-              className="about-ability group animate-ability max-2xl:hidden flex items-start gap-4 bg-zinc-900 hover:scale-105 transition-transform duration-300 rounded-lg p-5 border-l-2 border-rose-500 shadow-md shadow-rose-950"
-            >
-              <TbArrowBadgeRight className="text-rose-500 text-3xl shrink-0 max-md:hidden" />
-              <div>
-                <h4 className="text-gray-300 font-bold text-xl group-hover:text-rose-500">
-                  Meu diferencial
-                </h4>
-                <p className="text-gray-400 mt-2">
-                  Combinar criatividade, performance e atenção aos detalhes em
-                  cada projeto.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

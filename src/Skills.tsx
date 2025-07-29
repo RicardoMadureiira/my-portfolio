@@ -80,11 +80,11 @@ export function Skills() {
               <MdDesignServices className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              UI/UX Design
+              Interface & Experiência
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Especialista na criação de interfaces funcionais e responsivas,
-              garantindo uma experiência de usuário cativante e eficiente.
+              Criação de interfaces funcionais e responsivas, com foco na
+              experiência do usuário e boas práticas de usabilidade.
             </p>
           </div>
 
@@ -97,9 +97,9 @@ export function Skills() {
               Web Development
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Especialista em desenvolver soluções completas, combinando
-              frontend dinâmico e backend robusto para criar experiências
-              digitais de alta performance.
+              Desenvolvimento de aplicações web completas, integrando frontend e
+              backend com tecnologias modernas para entregar soluções
+              eficientes.
             </p>
           </div>
 
@@ -109,12 +109,11 @@ export function Skills() {
               <MdEngineering className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              Backend Engineering
+              APIs & Backend
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Especialista em criar APIs rápidas e confiáveis, integrando
-              servidores e bancos de dados com tecnologias modernas como Node.js
-              e MongoDB.
+              Criação de APIs rápidas e escaláveis utilizando Node.js, Fastify,
+              Prisma e MongoDB, garantindo robustez e performance.
             </p>
           </div>
         </div>
