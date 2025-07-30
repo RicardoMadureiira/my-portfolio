@@ -1,66 +1,29 @@
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export function AboutMe() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const mm = gsap.matchMedia();
-
-    mm.add("(max-width: 640px)", () => {
-      gsap.fromTo(
-        ".about-ability",
-        {
-          opacity: 0,
-          x: 100,
-          rotation: -360,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          rotation: 0,
-          duration: 2,
-          delay: 0,
-          ease: "steps(1)",
-          stagger: 0.6,
-          scrollTrigger: {
-            trigger: ".section-scrub",
-            start: "top 400px",
-            end: "bottom 500px",
-            // markers: true,
-          },
-          onComplete: () => {
-            // Para retornar o controle do `transform` ao CSS
-            gsap.set(".about-ability", { clearProps: "transform" });
-          },
-        }
-      );
-    });
 
     gsap.fromTo(
-      ".about-ability",
+      ".animate-about",
       {
         opacity: 0,
-        x: 500,
-        rotation: -360,
+        y: 100,
       },
       {
         opacity: 1,
-        x: 0,
-        rotation: 0,
-        duration: 2,
-        delay: 0,
-        ease: "steps(1)",
-        stagger: 0.6,
+        y: 0,
+        duration: 0.9,
+        stagger: 0.4,
+        delay: 0.1,
         scrollTrigger: {
-          trigger: ".section-scrub",
-          start: "top 400px",
-          end: "bottom 500px",
+          trigger: ".about-section",
           // markers: true,
-        },
-        onComplete: () => {
-          // Para retornar o controle do `transform` ao CSS
-          gsap.set(".about-ability", { clearProps: "transform" });
+          start: "top 400px",
+          end: "bottom 400px",
         },
       }
     );
@@ -90,13 +53,13 @@ export function AboutMe() {
   });
 
   return (
-    <section id="sobre" className=" w-full py-16 px-4 text-white">
+    <section id="sobre" className="about-section w-full py-16 px-4 text-white">
       <div className="max-w-5xl mx-auto flex flex-col gap-8">
-        <h2 className=" text-gray-500 font-thin text-5xl text-center max-lg:mt-10">
+        <h2 className="about-title text-gray-500 font-thin text-5xl text-center max-lg:mt-10">
           Sobre <span className="text-rose-500">Mim</span>
         </h2>
 
-        <p className="text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg leading-relaxed text-gray-300">
           Sou{" "}
           <span className="text-white font-semibold">
             Desenvolvedor Full Stack
@@ -110,30 +73,32 @@ export function AboutMe() {
           <span className="text-cyan-400">MongoDB </span> e{" "}
           <span className="text-cyan-400">TailwindCSS</span>.
         </p>
-        <p className="text-lg leading-relaxed text-gray-300">
-          e experiência prática no desenvolvimento de projetos próprios, como
-          este portfólio e outras aplicações web completas.
+        <p className="animate-about text-lg leading-relaxed text-gray-300">
+          Experiência prática no desenvolvimento de projetos próprios, como este
+          portfólio e outras aplicações web completas.
         </p>
 
-        <p className="text-lg leading-relaxed text-gray-300">
-          Busco oportunidades para colaborar com times de tecnologia, contribuir
-          com soluções e continuar aprendendo e crescendo como desenvolvedor.
+        <p className="animate-about text-lg leading-relaxed text-gray-300">
+          Tenho interesse em colaborar com equipes de tecnologia em projetos
+          desafiadores, contribuindo com soluções eficazes enquanto evoluo como
+          desenvolvedor.
         </p>
 
-        <p className="text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg leading-relaxed text-gray-300">
           Tenho familiaridade com metodologias ágeis como{" "}
           <span className="text-white font-medium">Scrum</span> e{" "}
-          <span className="text-white font-medium">Kanban</span>, e foco em
-          desenvolver soluções com código limpo, performance e boa usabilidade.
+          <span className="text-white font-medium">Kanban</span>, e procuro
+          seguir boas práticas de desenvolvimento, priorizando organização,
+          performance e usabilidade.”
         </p>
 
-        <p className="text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg leading-relaxed text-gray-300">
           Acredito no{" "}
           <span className="text-white font-medium">aprendizado contínuo</span> e
           estou sempre evoluindo tecnicamente para entregar soluções de valor.
         </p>
 
-        <div className="text-center mt-6">
+        <div className="text-center mt-6 animate-about">
           <a
             href="https://github.com/RicardoMadureiira"
             target="_blank"
@@ -142,6 +107,48 @@ export function AboutMe() {
           >
             Ver meus projetos no GitHub
           </a>
+
+          <section
+            id="contact"
+            className="w-full py-16 px-4 bg-zinc-900 text-white"
+          >
+            <div className="max-w-4xl mx-auto text-center flex flex-col gap-6">
+              <h2 className="text-3xl font-bold text-rose-500">Contato</h2>
+              <p className="text-gray-300 text-lg">
+                Fique à vontade para entrar em contato! Estou aberto a conexões
+                profissionais, colaboração em projetos e oportunidades na área
+                de desenvolvimento.
+              </p>
+
+              <div className="flex justify-center gap-8 mt-4 text-2xl">
+                <a
+                  href="mailto:seuemail@exemplo.com"
+                  className="text-gray-300 hover:text-rose-500 transition"
+                  aria-label="Email"
+                >
+                  <FaEnvelope />
+                </a>
+                <a
+                  href="https://linkedin.com/in/seu-perfil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-rose-500 transition"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  href="https://github.com/seu-usuario"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-rose-500 transition"
+                  aria-label="GitHub"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </section>

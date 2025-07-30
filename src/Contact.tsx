@@ -57,7 +57,7 @@ export function Contact() {
       id="contato"
     >
       <h2 className="contact-title text-gray-600 text-center text-5xl font-thin ">
-        Contact <span className="text-rose-500">Me</span>
+        Fale <span className="text-rose-500">comigo</span>
       </h2>
 
       {/* Contact */}
