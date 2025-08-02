@@ -43,8 +43,8 @@ export function AboutMe() {
         ease: "power3.out", // Suaviza o movimento
         delay: 0.2,
         scrollTrigger: {
-          trigger: ".section-title", // Elemento que ativa o efeito
-          start: "top 80%", // Início do efeito
+          trigger: ".about-section", // Elemento que ativa o efeito
+          start: "top 70%", // Início do efeito
           end: "top 30%", // Fim do efeito
           // markers: true,
         },
