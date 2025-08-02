@@ -64,11 +64,16 @@ export function Contact() {
       <div className=" mt-5 flex items-center justify-center">
         <div className="w-full max-w-4xl p-8 rounded-lg shadow-lg">
           {/* Formulário */}
-          <form action="#" method="POST" className="space-y-6">
+          <form
+            action="https://formspree.io/f/mrblabrk"
+            method="POST"
+            className="space-y-6"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Nome Completo */}
               <input
                 type="text"
+                name="name"
                 placeholder="Nome Completo"
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                 required
@@ -76,6 +81,7 @@ export function Contact() {
               {/* Email */}
               <input
                 type="email"
+                name="email"
                 placeholder="Email"
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                 required
@@ -83,12 +89,14 @@ export function Contact() {
               {/* Número de Telefone */}
               <input
                 type="text"
+                name="phone"
                 placeholder="Celular"
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
               />
               {/* Assunto */}
               <input
                 type="text"
+                name="subject"
                 placeholder="Assunto"
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
               />
@@ -96,6 +104,7 @@ export function Contact() {
 
             {/* Mensagem */}
             <textarea
+              name="message"
               placeholder="Sua mensagem..."
               rows={4}
               className="animate-contact w-full resize-none p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
