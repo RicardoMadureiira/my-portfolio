@@ -110,26 +110,25 @@ export function AboutMe() {
 
           <section
             id="contact"
-            className="w-full py-16 px-4 bg-zinc-900 text-white"
+            className="animate-about w-full py-16 px-4 bg-zinc-900 text-white"
           >
-            <div className="max-w-4xl mx-auto text-center flex flex-col gap-6">
-              <h2 className="text-3xl font-bold text-rose-500">Contato</h2>
+            <div className="max-w-4xl mx-auto text-center flex flex-col gap-5">
               <p className="text-gray-300 text-lg">
                 Fique à vontade para entrar em contato! Estou aberto a conexões
                 profissionais, colaboração em projetos e oportunidades na área
                 de desenvolvimento.
               </p>
 
-              <div className="flex justify-center gap-8 mt-4 text-2xl">
+              <div className="flex justify-center gap-8 mt-1 text-2xl">
                 <a
-                  href="mailto:seuemail@exemplo.com"
+                  href="mailto:ricardomadureira.dev@gmail.com"
                   className="text-gray-300 hover:text-rose-500 transition"
                   aria-label="Email"
                 >
                   <FaEnvelope />
                 </a>
                 <a
-                  href="https://linkedin.com/in/seu-perfil"
+                  href="https://www.linkedin.com/in/ricardo-madureira-490022245/?trk=opento_sprofile_topcard"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-rose-500 transition"
@@ -138,7 +137,7 @@ export function AboutMe() {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://github.com/seu-usuario"
+                  href="https://github.com/RicardoMadureiira"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-rose-500 transition"
