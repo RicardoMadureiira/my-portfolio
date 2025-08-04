@@ -55,7 +55,7 @@ export function Projects() {
         },
       }
     );
-  });
+  }, []);
 
   return (
     <section className="title-section px-[10%] min-h-screen " id="projetos">

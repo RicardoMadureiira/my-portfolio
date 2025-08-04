@@ -50,7 +50,7 @@ export function AboutMe() {
         },
       }
     );
-  });
+  }, []);
 
   return (
     <section id="sobre" className="about-section w-full py-16 px-4 text-white">

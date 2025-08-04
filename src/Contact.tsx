@@ -1,10 +1,10 @@
 import { gsap } from "gsap";
 import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function Contact() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
     gsap.fromTo(
       ".animate-contact",
@@ -49,11 +49,11 @@ export function Contact() {
         },
       }
     );
-  });
+  }, []);
 
   return (
     <div
-      className="div-title contact-section h-screen mt-32 px-[10%] overflow-hidden"
+      className="contact-section h-screen mt-32 px-[10%] overflow-hidden"
       id="contato"
     >
       <h2 className="contact-title text-gray-600 text-center text-5xl font-thin ">
