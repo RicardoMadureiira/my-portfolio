@@ -53,13 +53,16 @@ export function AboutMe() {
   }, []);
 
   return (
-    <section id="sobre" className="about-section w-full py-16 px-4 text-white">
-      <div className="max-w-5xl mx-auto flex flex-col gap-8">
-        <h2 className="about-title text-gray-500 font-thin text-5xl text-center max-lg:mt-10">
+    <section
+      id="sobre"
+      className="about-section w-full py-16 text-lg px-[10%] text-white"
+    >
+      <div className="max-w-5xl flex flex-col  gap-8">
+        <h2 className="about-title text-gray-500 font-thin text-5xl max-md:text-3xl text-center max-lg:mt-10">
           Sobre <span className="text-rose-500">Mim</span>
         </h2>
 
-        <p className="animate-about text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Sou{" "}
           <span className="text-white font-semibold">
             Desenvolvedor Full Stack
@@ -73,18 +76,18 @@ export function AboutMe() {
           <span className="text-cyan-400">MongoDB </span> e{" "}
           <span className="text-cyan-400">TailwindCSS</span>.
         </p>
-        <p className="animate-about text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Experiência prática no desenvolvimento de projetos próprios, como este
           portfólio e outras aplicações web completas.
         </p>
 
-        <p className="animate-about text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Tenho interesse em colaborar com equipes de tecnologia em projetos
           desafiadores, contribuindo com soluções eficazes enquanto evoluo como
           desenvolvedor.
         </p>
 
-        <p className="animate-about text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Tenho familiaridade com metodologias ágeis como{" "}
           <span className="text-white font-medium">Scrum</span> e{" "}
           <span className="text-white font-medium">Kanban</span>, e procuro
@@ -92,7 +95,7 @@ export function AboutMe() {
           performance e usabilidade.”
         </p>
 
-        <p className="animate-about text-lg leading-relaxed text-gray-300">
+        <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Acredito no{" "}
           <span className="text-white font-medium">aprendizado contínuo</span> e
           estou sempre evoluindo tecnicamente para entregar soluções de valor.
@@ -103,7 +106,7 @@ export function AboutMe() {
             href="https://github.com/RicardoMadureiira"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-rose-500 hover:bg-rose-600 transition-colors text-white px-6 py-3 rounded-full font-medium"
+            className="inline-block bg-rose-500 hover:bg-rose-600 transition-colors text-white px-6 py-3 max-md:text-sm rounded-full font-medium"
           >
             Ver meus projetos no GitHub
           </a>
@@ -113,7 +116,7 @@ export function AboutMe() {
             className="animate-about w-full py-16 px-4 bg-zinc-900 text-white"
           >
             <div className="max-w-4xl mx-auto text-center flex flex-col gap-5">
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300 text-lg max-md:text-sm">
                 Fique à vontade para entrar em contato! Estou aberto a conexões
                 profissionais, colaboração em projetos e oportunidades na área
                 de desenvolvimento.

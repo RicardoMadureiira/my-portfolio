@@ -56,7 +56,7 @@ export function Contact() {
       className="contact-section h-screen mt-32 px-[10%] overflow-hidden"
       id="contato"
     >
-      <h2 className="contact-title text-gray-600 text-center text-5xl font-thin ">
+      <h2 className="contact-title text-gray-600 text-center text-5xl max-md:text-3xl font-thin ">
         Fale <span className="text-rose-500">comigo</span>
       </h2>
 
@@ -88,9 +88,10 @@ export function Contact() {
               />
               {/* Número de Telefone */}
               <input
-                type="text"
+                type="tel"
                 name="phone"
                 placeholder="Celular"
+                required
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
               />
               {/* Assunto */}
@@ -98,6 +99,7 @@ export function Contact() {
                 type="text"
                 name="subject"
                 placeholder="Assunto"
+                required
                 className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
               />
             </div>

@@ -59,7 +59,7 @@ export function Projects() {
 
   return (
     <section className="title-section px-[10%] min-h-screen " id="projetos">
-      <h2 className="title-projects text-gray-500 font-thin mb-16 text-5xl text-center max-lg:mt-10">
+      <h2 className="title-projects text-gray-500 font-thin mb-16 text-5xl max-md:text-3xl text-center max-lg:mt-10">
         Últimos <span className="text-rose-500">Projetos</span>
       </h2>
 
