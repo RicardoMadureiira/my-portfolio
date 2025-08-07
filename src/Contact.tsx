@@ -12,7 +12,7 @@ const schema = z.object({
   email: z.string().email("Email inválido"),
   phone: z
     .string()
-    .nonempty("Telefone obrigatório")
+    .min(1, "Telefone obrigatório")
     .regex(
       /^\((11|12|13|14|15|16|17|18|19|21|22|24|27|28|31|32|33|34|35|37|38|41|42|43|44|45|46|47|48|49|51|53|54|55|61|62|63|64|65|66|67|68|69|71|73|74|75|77|79|81|82|83|84|85|86|87|88|89|91|92|93|94|95|96|97|98|99)\)\s9\d{4}-\d{4}$/,
       "Formato: (DD) 9XXXX-XXXX com DDD válido"
@@ -81,11 +81,24 @@ export function Contact() {
   }, []);
 
   // Função de envio do formulário
-  const onSubmit = async () => {
+  const onSubmit = async (data: FormData) => {
     try {
-      // Sem o parâmetro data
+      const response = await fetch("https://formspree.io/f/mrblabrk", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        console.log("Mensagem enviada com sucesso!");
+      } else {
+        console.error("Erro ao enviar formulário:", await response.text());
+      }
     } catch (error) {
-      console.error("Erro ao enviar formulário:", error);
+      console.error("Erro inesperado:", error);
     }
   };
 
@@ -141,7 +154,10 @@ export function Contact() {
                   placeholder="(DD) 9XXXX-XXXX"
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("phone")}
-                  ref={phoneRef}
+                  ref={(el) => {
+                    register("phone").ref(el);
+                    phoneRef.current = el;
+                  }}
                 />
                 {errors.phone && (
                   <p className="text-red-400 text-sm mt-1">
