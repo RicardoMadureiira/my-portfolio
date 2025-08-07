@@ -7,13 +7,19 @@
   padding: 0;
 }
 
+input,
+textarea {
+  background-color: transparent !important;
+  color: white !important;
+}
+
 ::-webkit-scrollbar {
-  width: 12px; /* Um pouco mais largo para o efeito ser mais visível */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #831843;
-  border-radius: 20px; /* Aumentei para 20px para ser mais visível */
+  border-radius: 20px;
   border: 3px solid transparent; /* Adiciona uma borda transparente */
   background-clip: padding-box; /* Faz o background respeitar a borda */
 }

@@ -1,6 +1,7 @@
 import { useLayoutEffect } from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub, FiInstagram } from "react-icons/fi";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+
+import { FiGithub } from "react-icons/fi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -93,8 +94,9 @@ export function MyPresentation() {
           >
             <FaLinkedinIn className="text-gray-500 text-2xl flex cursor-pointer bg-gradient-to-r from-gray-800 to-black rounded border border-gray-600 hover:scale-105 duration-200 hover:text-blue-500 hover:border-gray-800 hover:from-black hover:to-gray-900" />
           </a>
-          <a href="#" aria-label="Instagram Profile">
-            <FiInstagram className="text-gray-500 text-2xl flex cursor-pointer bg-gradient-to-r from-gray-800 to-black rounded border border-gray-600 hover:scale-105 duration-200 hover:text-pink-500 hover:border-gray-800 hover:from-black hover:to-gray-900" />
+
+          <a href="mailto:ricardomadureira.dev@gmail.com" aria-label="mail">
+            <FaEnvelope className="text-gray-500 text-2xl flex cursor-pointer bg-gradient-to-r from-gray-800 to-black rounded border border-gray-600 hover:scale-105 duration-200 hover:text-rose-500 hover:border-gray-800 hover:from-black hover:to-gray-900" />
           </a>
         </div>
       </div>
