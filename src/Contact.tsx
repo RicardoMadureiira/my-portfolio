@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,6 +24,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const phoneRef = useRef<HTMLInputElement | null>(null);
 
   const {
@@ -82,23 +83,27 @@ export function Contact() {
 
   // Função de envio do formulário
   const onSubmit = async (data: FormData) => {
+    setIsLoading(true);
     try {
       const response = await fetch("https://formspree.io/f/mrblabrk", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
           Accept: "application/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        console.log("Mensagem enviada com sucesso!");
+        console.log("Formulário enviado com sucesso!");
+        window.location.href = "/thanks";
       } else {
-        console.error("Erro ao enviar formulário:", await response.text());
+        console.error("Erro ao enviar formulário.");
       }
     } catch (error) {
-      console.error("Erro inesperado:", error);
+      console.error("Erro de rede:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -198,9 +203,10 @@ export function Contact() {
             <div className="text-center">
               <button
                 type="submit"
+                disabled={isLoading}
                 className="animate-contact bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-semibold shadow-md"
               >
-                Enviar Mensagem
+                {isLoading ? "Enviando..." : "Enviar Mensagem"}
               </button>
             </div>
           </form>
