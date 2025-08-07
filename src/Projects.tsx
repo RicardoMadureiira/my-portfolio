@@ -1,4 +1,6 @@
-import coffeeTest from "./assets/fresh-coffee.jpg";
+// import coffeeTest from "./assets/fresh-coffee.jpg";
+import hamburgueria from "./assets/Hamburgueria.jpg";
+import hojeInspira from "./assets/HojeInspira.jpg";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import listOfNotes from "./assets/ListofNotes.jpg";
 import { useEffect } from "react";
@@ -55,11 +57,11 @@ export function Projects() {
         },
       }
     );
-  });
+  }, []);
 
   return (
     <section className="title-section px-[10%] min-h-screen " id="projetos">
-      <h2 className="title-projects text-gray-500 font-thin mb-16 text-5xl text-center max-lg:mt-10">
+      <h2 className="title-projects text-gray-500 font-thin mb-16 text-5xl max-md:text-3xl text-center max-lg:mt-10">
         Últimos <span className="text-rose-500">Projetos</span>
       </h2>
 
@@ -69,7 +71,7 @@ export function Projects() {
         <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
           <img className="w-full h-52 object-cover" src={listOfNotes} alt="" />
           <div className="text-white group absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 pb-5 font-titleText font-bold">
+            <h4 className="text-2xl text-green-500 pb-5 font-titleText font-bold">
               List of Notes
             </h4>
             <p className="text-base font-light">
@@ -88,16 +90,17 @@ export function Projects() {
 
         {/* Projeto 2 */}
         <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={coffeeTest} alt="" />
+          <img className="w-full h-52 object-cover" src={hamburgueria} alt="" />
           <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 font-titleText font-bold pb-5">
-              Lista de Notas
+            <h4 className="text-2xl text-yellow-500 font-titleText font-bold pb-5">
+              Hamburgueria React
             </h4>
             <p className="text-base font-light">
-              Lista de notas adicionada por voz.
+              Aplicação desenvolvida com React, simulando uma hamburgueria
+              online com cardápio dinâmico e sistema de carrinho.
             </p>
             <a
-              href="https://list-of-notes-eight.vercel.app/"
+              href="https://hamburgueria-react-one.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-stone-50 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
@@ -109,81 +112,22 @@ export function Projects() {
 
         {/* Projeto 3 */}
         <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={coffeeTest} alt="" />
+          <img className="w-full h-52 object-cover" src={hojeInspira} alt="" />
           <div className="text-white absolute opacity-0 ease-in hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 font-titleText font-bold pb-5">
-              Web Design
+            <h4 className="text-2xl text-rose-500 font-titleText font-bold pb-5">
+              Inspiração Diária
             </h4>
             <p className="text-base font-light">
-              Lorem ipsum dolor sit amet consectetur.
+              Um app minimalista e interativo que entrega uma mensagem
+              inspiradora por dia. Ideal para cultivar pausas e reflexões com
+              leveza e propósito.
             </p>
             <a
-              href=""
+              href="https://motivacional-app.vercel.app/"
+              target="_blank"
               className="flex items-center justify-center w-12 h-12 bg-stone-50 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
             >
               <FaArrowUpRightFromSquare className="text-stone-950 text-2xl hover:text-rose-500" />
-            </a>
-          </div>
-        </div>
-
-        {/* Projeto 4 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={coffeeTest} alt="" />
-          <div className="text-white absolute opacity-0 ease-in hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 font-titleText font-bold pb-5">
-              Web Design
-            </h4>
-            <p className="text-base font-light">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <a
-              href=""
-              className="flex items-center justify-center w-12 h-12 bg-gray-200 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-stone-950 text-2xl hover:text-rose-500" />
-            </a>
-          </div>
-        </div>
-
-        {/* Projeto 5 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={coffeeTest} alt="" />
-          <div className="text-white group absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 font-titleText font-bold pb-5">
-              Projeto 5
-            </h4>
-            <p className="text-base font-light">
-              Lista de notas adicionada por voz.
-            </p>
-            <a
-              href="https://list-of-notes-eight.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-gray-200 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-black text-2xl hover:text-rose-500" />
-            </a>
-          </div>
-        </div>
-
-        {/* Projeto 6 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={coffeeTest} alt="" />
-          <div className="text-white group absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-stone-50 font-titleText font-bold pb-5">
-              Projeto 6
-            </h4>
-            <p className="text-base font-light">
-              Lista de notas adicionada por voz. Lista de notas adicionada por
-              voz. Lista de notas adicionada por voz.
-            </p>
-            <a
-              href="https://list-of-notes-eight.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-gray-200 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-black text-2xl hover:text-rose-500" />
             </a>
           </div>
         </div>
