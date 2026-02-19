@@ -62,7 +62,7 @@ export function MyPresentation() {
 
         <div className="typed-text mt-4 w-max opacity-0">
           <h3 className="w-max text-3xl pr-0 pl-0 animate-typing whitespace-nowrap overflow-hidden border-r-2 border-r-gray-500 max-lg:text-2xl font-extrabold">
-            Full-stack Developer.
+            Front-End Developer.
           </h3>
         </div>
         <p className="text-2xl hero-slogan translate-x-[500px] opacity-0 font-titleText max-sm:text-xs max-lg:text-xl whitespace-normal break-words max-w-3xl my-7 mb-3">
