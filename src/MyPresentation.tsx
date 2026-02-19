@@ -66,10 +66,10 @@ export function MyPresentation() {
           </h3>
         </div>
         <p className="text-2xl hero-slogan translate-x-[500px] opacity-0 font-titleText max-sm:text-xs max-lg:text-xl whitespace-normal break-words max-w-3xl my-7 mb-3">
-          Construindo Experiências Digitais Inovadoras com
+          Desenvolvendo interfaces web modernas com
           <span className="text-cyan-400"> ReactJS</span>,
           <span className="text-cyan-500"> TailwindCSS</span> e
-          <span className="text-green-400"> Node.js</span>.
+          <span className="text-yellow-400"> JavaScript</span>.
         </p>
         <div className="mt-6 flex gap-4 font-mono">
           <a
