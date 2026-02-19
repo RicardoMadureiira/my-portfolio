@@ -1,8 +1,7 @@
-// import coffeeTest from "./assets/fresh-coffee.jpg";
 import hamburgueria from "./assets/Hamburgueria.jpg";
 import hojeInspira from "./assets/HojeInspira.jpg";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import listOfNotes from "./assets/ListofNotes.jpg";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
@@ -19,14 +18,13 @@ export function Projects() {
       },
       {
         opacity: 1,
-        duration: 0.1,
+        duration: 0.6,
         y: 0,
         delay: 0.2,
-        stagger: 0.6,
+        stagger: 0.3,
         ease: "power1",
         scrollTrigger: {
           trigger: ".section-project",
-          // markers: true,
           start: "top 600",
           end: "bottom 500",
         },
@@ -39,19 +37,18 @@ export function Projects() {
     gsap.fromTo(
       ".title-projects",
       {
-        opacity: 0, // Invisível no início
-        rotateY: 90, // Começa virado de lado no eixo Y
-        scale: 0.8, // Levemente menor no início
+        opacity: 0,
+        rotateY: 90,
+        scale: 0.8,
       },
       {
-        opacity: 1, // Torna-se visível
-        rotateY: 0, // Gira para posição normal
-        scale: 1, // Retorna ao tamanho original
-        duration: 1.5, // Duração da animação
-        ease: "power3.out", // Suaviza o movimento
+        opacity: 1,
+        rotateY: 0,
+        scale: 1,
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: ".title-section",
-          // markers: true,
           start: "top 500px",
           end: "bottom 400px",
         },
@@ -60,77 +57,93 @@ export function Projects() {
   }, []);
 
   return (
-    <section className="title-section px-[10%] min-h-screen " id="projetos">
+    <section className="title-section px-[10%] min-h-screen" id="projetos">
       <h2 className="title-projects text-gray-500 font-thin mb-16 text-5xl max-md:text-3xl text-center max-lg:mt-10">
         Últimos <span className="text-rose-500">Projetos</span>
       </h2>
 
-      {/* Grid Responsivo */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center section-project">
+
         {/* Projeto 1 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={listOfNotes} alt="" />
-          <div className="text-white group absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-green-500 pb-5 font-titleText font-bold">
+        <a
+          href="https://list-of-notes-eight.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
+        >
+          <img
+            className="w-full h-52 object-cover"
+            src={listOfNotes}
+            alt="Projeto List of Notes"
+          />
+
+          <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
+            <h4 className="text-2xl text-green-500 pb-5 font-bold">
               List of Notes
             </h4>
+
             <p className="text-base font-light">
               Lista de notas adicionada por voz.
             </p>
-            <a
-              href="https://list-of-notes-eight.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-stone-50 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-black text-2xl hover:text-rose-500" />
-            </a>
+
+            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
           </div>
-        </div>
+        </a>
 
         {/* Projeto 2 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={hamburgueria} alt="" />
+        <a
+          href="https://hamburgueria-react-one.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
+        >
+          <img
+            className="w-full h-52 object-cover"
+            src={hamburgueria}
+            alt="Projeto Hamburgueria React"
+          />
+
           <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-yellow-500 font-titleText font-bold pb-5">
+            <h4 className="text-2xl text-yellow-500 pb-5 font-bold">
               Hamburgueria React
             </h4>
+
             <p className="text-base font-light">
               Aplicação desenvolvida com React, simulando uma hamburgueria
               online com cardápio dinâmico e sistema de carrinho.
             </p>
-            <a
-              href="https://hamburgueria-react-one.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-stone-50 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-stone-950 text-2xl hover:text-rose-500" />
-            </a>
+
+            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
           </div>
-        </div>
+        </a>
 
         {/* Projeto 3 */}
-        <div className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500">
-          <img className="w-full h-52 object-cover" src={hojeInspira} alt="" />
-          <div className="text-white absolute opacity-0 ease-in hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-rose-500 font-titleText font-bold pb-5">
+        <a
+          href="https://motivacional-app.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
+        >
+          <img
+            className="w-full h-52 object-cover"
+            src={hojeInspira}
+            alt="Projeto Inspiração Diária"
+          />
+
+          <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
+            <h4 className="text-2xl text-rose-500 pb-5 font-bold">
               Inspiração Diária
             </h4>
+
             <p className="text-base font-light">
               Um app minimalista e interativo que entrega uma mensagem
-              inspiradora por dia. Ideal para cultivar pausas e reflexões com
-              leveza e propósito.
+              inspiradora por dia.
             </p>
-            <a
-              href="https://motivacional-app.vercel.app/"
-              target="_blank"
-              className="flex items-center justify-center w-12 h-12 bg-stone-50 rounded-full mt-4 hover:scale-105 duration-500 transition-transform"
-            >
-              <FaArrowUpRightFromSquare className="text-stone-950 text-2xl hover:text-rose-500" />
-            </a>
+
+            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
           </div>
-        </div>
+        </a>
+
       </div>
     </section>
   );
