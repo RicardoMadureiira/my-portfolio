@@ -109,11 +109,10 @@ export function Skills() {
               <MdEngineering className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              APIs & Backend
+              Componentização & UI
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Criação de APIs rápidas e escaláveis utilizando Node.js, Fastify,
-              Prisma e MongoDB, garantindo robustez e performance.
+              Criação de componentes reutilizáveis com React, organização de interfaces e estilização com Tailwind, mantendo código limpo e escalável.
             </p>
           </div>
         </div>
