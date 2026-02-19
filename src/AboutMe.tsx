@@ -65,26 +65,22 @@ export function AboutMe() {
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Sou{" "}
           <span className="text-white font-semibold">
-            Desenvolvedor Full Stack
+             Desenvolvedor Front-End
           </span>
-          , com formação em Análise e Desenvolvimento de Sistemas, com
-          experiência prática em projetos próprios utilizando tecnologias como{" "}
+          formado em Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de interfaces web utilizando
           <span className="text-cyan-400">React</span>,{" "}
-          <span className="text-cyan-400">Node.js</span>,{" "}
-          <span className="text-cyan-400">Fastify</span>,{" "}
-          <span className="text-cyan-400">Prisma</span>,{" "}
-          <span className="text-cyan-400">MongoDB </span> e{" "}
+          <span className="text-yellow-500">JavaScript</span>,{" "}
           <span className="text-cyan-400">TailwindCSS</span>.
         </p>
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
-          Experiência prática no desenvolvimento de projetos próprios, como este
-          portfólio e outras aplicações web completas.
+          Tenho experiência prática no desenvolvimento de projetos próprios, aplicando conceitos
+          de responsividade, organização de componentes e boas práticas de código.
         </p>
 
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
-          Tenho interesse em colaborar com equipes de tecnologia em projetos
-          desafiadores, contribuindo com soluções eficazes enquanto evoluo como
-          desenvolvedor.
+           Estou em busca da minha primeira oportunidade profissional como desenvolvedor
+           Front-End júnior, onde eu possa aprender na prática, evoluir tecnicamente e
+           contribuir com o time.
         </p>
 
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
@@ -92,7 +88,7 @@ export function AboutMe() {
           <span className="text-white font-medium">Scrum</span> e{" "}
           <span className="text-white font-medium">Kanban</span>, e procuro
           seguir boas práticas de desenvolvimento, priorizando organização,
-          performance e usabilidade.”
+          performance e usabilidade.
         </p>
 
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
