@@ -65,7 +65,7 @@ export function AboutMe() {
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Sou{" "}
           <span className="text-white font-semibold">
-             Desenvolvedor Front-End
+             Desenvolvedor Front-End{" "}
           </span>
           formado em Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de interfaces web utilizando{" "}
           <span className="text-cyan-400">React</span>,{" "}
