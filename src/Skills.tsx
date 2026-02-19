@@ -94,12 +94,10 @@ export function Skills() {
               <FaCode className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              Web Development
+              Front-End Development
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Desenvolvimento de aplicações web completas, integrando frontend e
-              backend com tecnologias modernas para entregar soluções
-              eficientes.
+              Desenvolvimento de interfaces web modernas utilizando JavaScript, React, Vite e Tailwind, com foco em responsividade, organização de componentes e experiência do usuário.
             </p>
           </div>
 
