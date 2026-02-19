@@ -67,7 +67,7 @@ export function AboutMe() {
           <span className="text-white font-semibold">
              Desenvolvedor Front-End
           </span>
-          formado em Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de interfaces web utilizando
+          formado em Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de interfaces web utilizando{" "}
           <span className="text-cyan-400">React</span>,{" "}
           <span className="text-yellow-500">JavaScript</span>,{" "}
           <span className="text-cyan-400">TailwindCSS</span>.
