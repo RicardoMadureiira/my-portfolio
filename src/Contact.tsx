@@ -314,7 +314,7 @@ export function Contact() {
               <div>
                 <input
                   type="tel"
-                  placeholder="Celular"
+                  placeholder="Seu Celular"
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("phone")}
                   ref={(el) => {
