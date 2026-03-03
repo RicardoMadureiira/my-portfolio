@@ -21,8 +21,8 @@ export function AboutMe() {
         delay: 0.1,
         scrollTrigger: {
           trigger: ".about-section",
-          // markers: true,
-          start: "top 90%",
+          markers: true,
+          start: "top 450",
           end: "bottom 400px",
         },
       },
