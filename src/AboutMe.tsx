@@ -68,9 +68,9 @@ export function AboutMe() {
              Desenvolvedor Front-End{" "}
           </span>
           formado em Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de interfaces web utilizando{" "}
-          <span className="text-cyan-400">React</span>,{" "}
-          <span className="text-yellow-500">JavaScript</span>,{" "}
-          <span className="text-cyan-400">TailwindCSS</span>.
+          <span className="text-rose-500">React</span>,{" "}
+          <span className="text-rose-500">JavaScript</span>,{" "}
+          <span className="text-rose-500">TailwindCSS</span>.
         </p>
         <p className="animate-about text-lg max-md:text-sm leading-relaxed text-gray-300">
           Tenho experiência prática no desenvolvimento de projetos próprios, aplicando conceitos
