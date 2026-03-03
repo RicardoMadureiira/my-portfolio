@@ -74,7 +74,7 @@ export function MyPresentation() {
         <div className="mt-6 flex gap-4 font-mono">
           <a
             href="#contato"
-            className="px-6 hero-contact translate-x-[-350px] py-2 max-sm:text-xs bg-zinc-700 text-gray-200 rounded-lg hover:bg-rose-500 font-light"
+            className="px-6 hero-contact translate-x-[-380px] py-2 max-sm:text-xs bg-zinc-700 text-gray-200 rounded-lg hover:bg-rose-500 font-light"
           >
             Entre em Contato
           </a>

@@ -53,7 +53,10 @@ export function AboutMe() {
   }, []);
 
   return (
-    <section id="sobre" className="about-section w-full py-16 text-lg px-[10%]">
+    <section
+      id="sobre"
+      className="about-section w-full py-16 text-lg px-[10%] flex justify-center"
+    >
       <div className="max-w-5xl flex flex-col font-medium gap-8">
         <h2 className="about-title text-gray-500 font-thin text-5xl max-md:text-3xl text-center max-lg:mt-10">
           Sobre <span className="text-rose-500">Mim</span>
