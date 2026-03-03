@@ -54,7 +54,7 @@ export function MyPresentation() {
 
   return (
     <section className="min-h-screen px-[10%] flex items-center overflow-hidden ">
-      <div className="text-white">
+      <div className="text-slate-300">
         <h1 className="text-4xl max-sm:text-lg max-lg:text-2xl font-titleText translate-x-[-600px] opacity-0">
           Olá, Sou{" "}
           <span className="text-rose-500 font-light">Ricardo Silva</span>
@@ -69,7 +69,7 @@ export function MyPresentation() {
           Desenvolvendo interfaces web modernas com
           <span className="text-rose-500"> ReactJS</span>,
           <span className="text-rose-500"> TailwindCSS</span> e
-          <span className="text-rose-500"> JavaScript</span>.
+          <span className="text-rose-500"> TypeScript</span>.
         </p>
         <div className="mt-6 flex gap-4 font-mono">
           <a

@@ -1,10 +1,15 @@
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="text-white px-[20%] text-center mt-14">
-      <div>
-        <p className="border-t border-rose-500 pt-2 text-gray-400">
-          Copyright &copy; 2024 by @ricardomadureira.dev@gmail.com | Todos os
-          direitos reservados.
+    <footer className="w-full px-6 sm:px-[10%] lg:px-[20%] pb-8 mt-20">
+      <div className="border-t border-rose-500/30 pt-6 text-center">
+        <p className="text-zinc-500 text-sm sm:text-base tracking-wide">
+          Copyright &copy; {currentYear} |
+          <span className="text-zinc-300 font-medium"> Ricardo Silva</span>
+        </p>
+        <p className="text-zinc-600 text-xs mt-2 italic">
+          Desenvolvido com React, TypeScript & Tailwind CSS
         </p>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 import hamburgueria from "./assets/Hamburgueria.jpg";
 import hojeInspira from "./assets/HojeInspira.jpg";
-import listOfNotes from "./assets/ListofNotes.jpg";
+import financas from "./assets/Financas.png";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,7 +31,7 @@ export function Projects() {
         onComplete: () => {
           gsap.set(".animate-project", { clearProps: "transform" });
         },
-      }
+      },
     );
 
     gsap.fromTo(
@@ -52,7 +52,7 @@ export function Projects() {
           start: "top 500px",
           end: "bottom 400px",
         },
-      }
+      },
     );
   }, []);
 
@@ -63,61 +63,39 @@ export function Projects() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center section-project">
-
         {/* Projeto 1 */}
         <a
-          href="https://list-of-notes-eight.vercel.app/"
+          href="https://controle-financasrm.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
         >
           <img
             className="w-full h-52 object-cover"
-            src={listOfNotes}
+            src={financas}
             alt="Projeto List of Notes"
           />
 
-          <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-green-500 pb-5 font-bold">
-              List of Notes
+          <div className="text-white absolute opacity-0 hover:opacity-100 duration-500 bottom-0 left-0 w-full h-full bg-zinc-950/90 flex items-center justify-center flex-col text-center px-8">
+            <h4 className="text-xl text-rose-500 mb-3 font-extrabold tracking-tight">
+              Controle de Finanças
             </h4>
 
-            <p className="text-base font-light">
-              Lista de notas adicionada por voz.
+            <p className="text-sm font-medium text-zinc-300 leading-relaxed">
+              Aplicação Full Stack com{" "}
+              <span className="text-white whitespace-nowrap">
+                React + TypeScript
+              </span>
+              . Backend em <span className="text-white">Fastify</span> com banco
+              <span className="text-white"> MongoDB</span> via{" "}
+              <span className="text-white">Prisma</span>.
             </p>
 
-            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
+            <FaArrowUpRightFromSquare className="text-rose-500 text-xl mt-5 animate-bounce" />
           </div>
         </a>
 
-        {/* Projeto 2 */}
-        <a
-          href="https://hamburgueria-react-one.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
-        >
-          <img
-            className="w-full h-52 object-cover"
-            src={hamburgueria}
-            alt="Projeto Hamburgueria React"
-          />
-
-          <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-yellow-500 pb-5 font-bold">
-              Hamburgueria React
-            </h4>
-
-            <p className="text-base font-light">
-              Aplicação desenvolvida com React, simulando uma hamburgueria
-              online com cardápio dinâmico e sistema de carrinho.
-            </p>
-
-            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
-          </div>
-        </a>
-
-        {/* Projeto 3 */}
+        {/* PROJETO 2 - INSPIRAÇÃO */}
         <a
           href="https://motivacional-app.vercel.app/"
           target="_blank"
@@ -130,20 +108,52 @@ export function Projects() {
             alt="Projeto Inspiração Diária"
           />
 
-          <div className="text-white absolute opacity-0 hover:opacity-100 duration-700 bottom-0 left-0 w-full h-full bg-gradient-to-t from-stone-950 flex items-center justify-center flex-col text-center px-4">
-            <h4 className="text-2xl text-rose-500 pb-5 font-bold">
+          <div className="text-white absolute opacity-0 hover:opacity-100 duration-500 bottom-0 left-0 w-full h-full bg-zinc-950/90 flex items-center justify-center flex-col text-center px-6">
+            <h4 className="text-2xl text-rose-500 mb-3 font-extrabold tracking-tight">
               Inspiração Diária
             </h4>
-
-            <p className="text-base font-light">
-              Um app minimalista e interativo que entrega uma mensagem
-              inspiradora por dia.
+            <p className="text-sm font-medium text-zinc-300 leading-relaxed">
+              App minimalista com{" "}
+              <span className="text-white whitespace-nowrap">
+                React + TypeScript
+              </span>
+              , focado em entregar uma experiência de usuário leve e
+              inspiradora.
             </p>
-
-            <FaArrowUpRightFromSquare className="text-white text-2xl mt-4" />
+            <FaArrowUpRightFromSquare className="text-rose-500 text-xl mt-5 animate-bounce" />
           </div>
         </a>
 
+        {/* PROJETO 3 - HAMBURGUERIA */}
+        <a
+          href="https://hamburgueria-react-one.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-project opacity-0 relative rounded-2xl shadow-lg hover:scale-105 overflow-hidden flex duration-500 cursor-pointer"
+        >
+          <img
+            className="w-full h-52 object-cover"
+            src={hamburgueria}
+            alt="Projeto Hamburgueria React"
+          />
+
+          <div className="text-white absolute opacity-0 hover:opacity-100 duration-500 bottom-0 left-0 w-full h-full bg-zinc-950/90 flex items-center justify-center flex-col text-center px-6">
+            <h4 className="text-2xl text-rose-500 mb-3 font-extrabold tracking-tight">
+              Hamburgueria Online
+            </h4>
+            <p className="text-sm font-medium text-zinc-300 leading-relaxed">
+              Interface de delivery com{" "}
+              <span className="text-white font-bold">cardápio interativo</span>{" "}
+              e
+              <span className="text-white font-bold whitespace-nowrap">
+                {" "}
+                carrinho em tempo real
+              </span>
+              .
+            </p>
+            <FaArrowUpRightFromSquare className="text-rose-500 text-xl mt-5 animate-bounce" />
+          </div>
+        </a>
       </div>
     </section>
   );

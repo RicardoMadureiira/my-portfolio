@@ -15,7 +15,7 @@ const schema = z.object({
     .min(1, "Telefone obrigatório")
     .regex(
       /^\((11|12|13|14|15|16|17|18|19|21|22|24|27|28|31|32|33|34|35|37|38|41|42|43|44|45|46|47|48|49|51|53|54|55|61|62|63|64|65|66|67|68|69|71|73|74|75|77|79|81|82|83|84|85|86|87|88|89|91|92|93|94|95|96|97|98|99)\)\s9\d{4}-\d{4}$/,
-      "Formato: (DD) 9XXXX-XXXX com DDD válido"
+      "Formato: (DD) 9XXXX-XXXX com DDD válido",
     ),
   subject: z.string().min(1, "Assunto obrigatório"),
   message: z.string().min(1, "Mensagem muito curta"),
@@ -59,7 +59,7 @@ export function Contact() {
           start: "top 400px",
           end: "bottom 400px",
         },
-      }
+      },
     );
 
     gsap.fromTo(
@@ -77,7 +77,7 @@ export function Contact() {
           start: "top 80%",
           end: "top 30%",
         },
-      }
+      },
     );
   }, []);
 
@@ -104,7 +104,10 @@ export function Contact() {
   };
 
   return (
-    <div className="contact-section h-screen mt-32 px-[10%] overflow-hidden" id="contato">
+    <div
+      className="contact-section h-screen mt-32 px-[10%] overflow-hidden"
+      id="contato"
+    >
       <h2 className="contact-title text-gray-600 text-center text-5xl max-md:text-3xl font-thin">
         Fale <span className="text-rose-500">comigo</span>
       </h2>
@@ -120,7 +123,11 @@ export function Contact() {
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("name")}
                 />
-                {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
+                {errors.name && (
+                  <p className="text-red-400 text-sm mt-1">
+                    {errors.name.message}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -130,13 +137,17 @@ export function Contact() {
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("email")}
                 />
-                {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>}
+                {errors.email && (
+                  <p className="text-red-400 text-sm mt-1">
+                    {errors.email.message}
+                  </p>
+                )}
               </div>
 
               <div>
                 <input
                   type="tel"
-                  placeholder="Seu Celular"
+                  placeholder="Celular"
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("phone")}
                   ref={(el) => {
@@ -144,7 +155,11 @@ export function Contact() {
                     phoneRef.current = el;
                   }}
                 />
-                {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>}
+                {errors.phone && (
+                  <p className="text-red-400 text-sm mt-1">
+                    {errors.phone.message}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -154,7 +169,11 @@ export function Contact() {
                   className="animate-contact w-full p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   {...register("subject")}
                 />
-                {errors.subject && <p className="text-red-400 text-sm mt-1">{errors.subject.message}</p>}
+                {errors.subject && (
+                  <p className="text-red-400 text-sm mt-1">
+                    {errors.subject.message}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -165,7 +184,11 @@ export function Contact() {
                 className="animate-contact w-full resize-none p-3 rounded-md bg-transparent border border-rose-500 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                 {...register("message")}
               />
-              {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>}
+              {errors.message && (
+                <p className="text-red-400 text-sm mt-1">
+                  {errors.message.message}
+                </p>
+              )}
             </div>
 
             <div className="text-center">

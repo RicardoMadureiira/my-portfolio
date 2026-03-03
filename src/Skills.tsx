@@ -32,7 +32,7 @@ export function Skills() {
         onComplete: () => {
           gsap.set(".title-skills", { clearProps: "transform" });
         },
-      }
+      },
     );
 
     gsap.fromTo(
@@ -58,7 +58,7 @@ export function Skills() {
         onComplete: () => {
           gsap.set(".my-skills", { clearProps: "transform" });
         },
-      }
+      },
     );
   }, []);
 
@@ -83,7 +83,10 @@ export function Skills() {
               Interface & Experiência
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Desenvolvimento de interfaces modernas utilizando <strong>React</strong> e <strong>Tailwind CSS.</strong> Meu foco é transformar layouts em código fiel, garantindo que a aplicação seja totalmente responsiva e funcional em qualquer dispositivo.  
+              Desenvolvimento de interfaces modernas utilizando{" "}
+              <strong>React</strong> e <strong>Tailwind CSS.</strong> Meu foco é
+              transformar layouts em código fiel, garantindo que a aplicação
+              seja totalmente responsiva e funcional em qualquer dispositivo.
             </p>
           </div>
 
@@ -96,7 +99,10 @@ export function Skills() {
               Consumo de APIs
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Experiência no desenvolvimento de aplicações dinâmicas que se conectam a serviços externos. Domínio de <strong>hooks</strong>, <strong>gerenciamento de estado</strong> e integração de dados de forma <strong>assíncrona</strong> e eficiente.   
+              Experiência no desenvolvimento de aplicações dinâmicas que se
+              conectam a serviços externos. Domínio de <strong>hooks</strong>,{" "}
+              <strong>gerenciamento de estado</strong> e integração de dados de
+              forma <strong>assíncrona</strong> e eficiente.
             </p>
           </div>
 
@@ -109,7 +115,10 @@ export function Skills() {
               Fundamentos de Back-End
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Conhecimento em <strong>Node.js</strong>, <strong>Fastify</strong> e <strong>Prisma</strong> para criação de APIs e gestão de bancos de dados <strong>MongoDB</strong>, focando na integração entre o servidor e a interface.
+              Conhecimento em <strong>Node.js</strong>, <strong>Fastify</strong>{" "}
+              e <strong>Prisma</strong> para criação de APIs e gestão de bancos
+              de dados <strong>MongoDB</strong>, focando na integração entre o
+              servidor e a interface.
             </p>
           </div>
         </div>
