@@ -1,5 +1,5 @@
-import { FaCode } from "react-icons/fa";
-import { MdDesignServices, MdEngineering } from "react-icons/md";
+import { FaCode, FaDatabase } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
@@ -83,8 +83,7 @@ export function Skills() {
               Interface & Experiência
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Criação de interfaces funcionais e responsivas, com foco na
-              experiência do usuário e boas práticas de usabilidade.
+              Desenvolvimento de interfaces modernas utilizando React e Tailwind CSS. Meu foco é transformar layouts em código fiel, garantindo que a aplicação seja totalmente responsiva e funcional em qualquer dispositivo.  
             </p>
           </div>
 
@@ -94,23 +93,23 @@ export function Skills() {
               <FaCode className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              Front-End Development
+              Consumo de APIs
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Desenvolvimento de interfaces web modernas utilizando JavaScript, React, Vite e Tailwind, com foco em responsividade, organização de componentes e experiência do usuário.
+              Experiência no desenvolvimento de aplicações dinâmicas que se conectam a serviços externos. Domínio de hooks, gerenciamento de estado e integração de dados de forma assíncrona e eficiente.   
             </p>
           </div>
 
           {/* Backend Engineering */}
           <div className="title-skills opacity-0 flex flex-col items-center justify-between p-12 sm:p-6 shadow-md shadow-zinc-950 border-y-8 border-rose-500 rounded-xl group min-h-[300px]">
             <i className="group-hover:animate-spin360">
-              <MdEngineering className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
+              <FaDatabase className="text-5xl sm:text-6xl text-white group-hover:text-rose-500" />
             </i>
             <h1 className="text-2xl text-gray-300 font-bold group-hover:text-rose-500 mt-4 text-center">
-              Componentização & UI
+              Fundamentos de Back-End
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Criação de componentes reutilizáveis com React, organização de interfaces e estilização com Tailwind, mantendo código limpo e escalável.
+              Conhecimento em <strong>Node.js</strong>, <strong>Fastify</strong> e <strong>Prisma</strong> para criação de APIs e gestão de bancos de dados <strong>MongoDB</strong>, focando na integração entre o servidor e a interface.
             </p>
           </div>
         </div>
