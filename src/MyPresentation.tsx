@@ -67,9 +67,9 @@ export function MyPresentation() {
         </div>
         <p className="text-2xl hero-slogan translate-x-[500px] opacity-0 font-titleText max-sm:text-xs max-lg:text-xl whitespace-normal break-words max-w-3xl my-7 mb-3">
           Desenvolvendo interfaces web modernas com
-          <span className="text-cyan-400"> ReactJS</span>,
-          <span className="text-cyan-500"> TailwindCSS</span> e
-          <span className="text-yellow-400"> JavaScript</span>.
+          <span className="text-rose-500"> ReactJS</span>,
+          <span className="text-rose-500"> TailwindCSS</span> e
+          <span className="text-rose-500"> JavaScript</span>.
         </p>
         <div className="mt-6 flex gap-4 font-mono">
           <a
@@ -79,7 +79,7 @@ export function MyPresentation() {
             Entre em Contato
           </a>
         </div>
-        <div className="flex hero-slogan max-sm:justify-start pl-0 gap-2 mt-4 opacity-0">
+        <div className="flex hero-slogan max-sm:justify-start pl-0 gap-4 mt-4 opacity-0">
           <a
             href="https://github.com/RicardoMadureiira"
             target="_blank"
