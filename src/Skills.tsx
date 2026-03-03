@@ -83,7 +83,7 @@ export function Skills() {
               Interface & Experiência
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Desenvolvimento de interfaces modernas utilizando React e Tailwind CSS. Meu foco é transformar layouts em código fiel, garantindo que a aplicação seja totalmente responsiva e funcional em qualquer dispositivo.  
+              Desenvolvimento de interfaces modernas utilizando <strong>React</strong> e <strong>Tailwind CSS.</strong> Meu foco é transformar layouts em código fiel, garantindo que a aplicação seja totalmente responsiva e funcional em qualquer dispositivo.  
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export function Skills() {
               Consumo de APIs
             </h1>
             <p className="text-center text-gray-400 text-sm sm:text-base mt-2">
-              Experiência no desenvolvimento de aplicações dinâmicas que se conectam a serviços externos. Domínio de hooks, gerenciamento de estado e integração de dados de forma assíncrona e eficiente.   
+              Experiência no desenvolvimento de aplicações dinâmicas que se conectam a serviços externos. Domínio de <strong>hooks</strong>, <strong>gerenciamento de estado</strong> e integração de dados de forma <strong>assíncrona</strong> e eficiente.   
             </p>
           </div>
 
